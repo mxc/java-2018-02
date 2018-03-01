@@ -10,7 +10,7 @@ public abstract class TransportType {
 	public TransportType(String id, int maxCapacity, double maxSpeed, double rate) {
 		this.maxCapacity = maxCapacity;
 		this.maxSpeed = maxSpeed;
-		this.setRate(rate);
+		this.rate = rate;
 		this.transportId = id;
 	}
 
@@ -31,9 +31,6 @@ public abstract class TransportType {
 	}
 
 	public void setRate(double rate) {
-		if (rate<0) {
-			throw new RuntimeException("Rate cannot be negative");
-		}
 		this.rate = rate;
 	}
 

@@ -1,7 +1,9 @@
 package za.co.demo.model;
 
+import java.time.Duration;
 import java.time.LocalDate;
-
+import java.time.temporal.ChronoUnit;
+	
 public class Truck extends LandTransport{
 	
 	private String model;
@@ -24,6 +26,16 @@ public class Truck extends LandTransport{
 		return purchaseDate;
 	}
 
-	
+
+	@Override
+	public double getRemainingLife() {
+		return Duration.between(this.purchaseDate.plusDays(900).atStartOfDay() ,
+				LocalDate.now().atStartOfDay()).toDays();
+	}
+
+	@Override
+	public String toString() {
+		return super.toString() +" model:"+model;
+	}
 	
 }

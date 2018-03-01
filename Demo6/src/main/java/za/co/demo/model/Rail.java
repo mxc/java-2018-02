@@ -7,4 +7,10 @@ public class Rail extends LandTransport{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public double getRemainingLife() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

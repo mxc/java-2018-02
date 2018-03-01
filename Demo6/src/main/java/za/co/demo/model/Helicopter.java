@@ -28,6 +28,12 @@ public class Helicopter extends AirTransport{
 	public void setMainSchedule(Duration mainSchedule) {
 		this.mainSchedule = mainSchedule;
 	}
+
+	@Override
+	public double getRemainingLife() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 
 }

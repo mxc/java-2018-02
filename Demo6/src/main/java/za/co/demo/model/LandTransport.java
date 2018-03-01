@@ -1,6 +1,6 @@
 package za.co.demo.model;
 
-public class LandTransport extends TransportType {
+public abstract class LandTransport extends TransportType {
 
 	protected String driver;
 	

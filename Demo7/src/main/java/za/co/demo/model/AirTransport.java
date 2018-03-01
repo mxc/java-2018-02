@@ -5,8 +5,7 @@ public abstract class AirTransport extends TransportType {
 	private double planningTime;
 	private String pilot;
 	private double govermentTaxes;
-	private Location location;
-	
+
 	public AirTransport(String id, int maxCapacity, double maxSpeed, double rate) {
 		super(id, maxCapacity, maxSpeed, rate);
 		// TODO Auto-generated constructor stub
@@ -34,14 +33,6 @@ public abstract class AirTransport extends TransportType {
 
 	public void setGovermentTaxes(double govermentTaxes) {
 		this.govermentTaxes = govermentTaxes;
-	}
-
-	public Location getLocation() {
-		return location;
-	}
-
-	public void setLocation(Location location) {
-		this.location = location;
 	}
 
 	@Override
